@@ -1,37 +1,103 @@
-<template lang="pug">
-.curso-main-container.introduccion
-  BannerInterno
-  .container.tarjeta.tarjeta--blanca.p-4.p-md-5.mb-5
-  
-    .titulo-principal.color-acento-contenido
-      .titulo-principal__numero
-        span
-          i.fas.fa-info
-      h1 Introducción
-    .row.justify-content-center.mb-5
-      .col-lg-8.mb-lg-0.mb-3
-        p.mb-4 La programación orientada a objetos (POO) es uno de los paradigmas más influyentes en el desarrollo de #[em software] moderno. Su capacidad para modelar problemas complejos de manera intuitiva, junto con su enfoque en la reutilización y mantenibilidad del código, la han convertido en una herramienta fundamental para desarrolladores y arquitectos de #[em software].
-        .p-4(style="background-color: #CFF8DE")
-          .row.justify-content-center
-            .col-lg-2.col-4.mb-lg-0.mb-3: img(src='@/assets/curso/temas/1.svg', alt='')
-            .col-lg-10
-              p.mb-0 Este componente aborda de manera sistemática los conceptos y prácticas de la programación orientada a objetos, desde sus fundamentos hasta la implementación de arquitecturas robustas. Se explora el paradigma desde múltiples perspectivas: comenzando con los conceptos básicos de clases y objetos, avanzando hacia principios de diseño sofisticados como SOLID, y culminando con patrones arquitectónicos y mejores prácticas de la industria.
-      .col-lg-4.col-7: img(src='@/assets/curso/temas/2.png', alt='')
-    .row.justify-content-center.mb-5
-      .col-lg-3.col-7.mb-lg-0.mb-3: img(src='@/assets/curso/temas/3.png', alt='')
-      .col-lg-9
-        p.mb-4 A lo largo del material, se combinan conceptos teóricos con ejemplos prácticos del mundo real, proporcionando una base sólida para que los estudiantes desarrollen #[em software] orientado a objetos de calidad. Se enfatiza la importancia del modelado y diseño previo a la implementación, utilizando herramientas como UML para visualizar y comunicar efectivamente las estructuras y relaciones entre objetos.
-        .p-4(style="background-color: #EDE9EC ") 
-          p.mb-0  La integración de conceptos arquitectónicos con prácticas de modelado asegura que los estudiantes no solo aprendan a escribir código orientado a objetos, sino que también comprendan cómo diseñar sistemas escalables y mantenibles. Como sugiere un principio fundamental en el desarrollo de software: "El buen diseño es tan importante como el buen código".
-    p.mb-5(data-aos='fade-right') ¡Lo invitamos a explorar el mundo de la programación orientada a objetos, donde descubrirás cómo crear #[em software] robusto y flexible, aplicando principios y patrones que han resistido la prueba del tiempo!
-    figure
-      .video
-        iframe(width="560" height="315" src="https://www.youtube.com/embed/BktcL3QiGKA?si=ewQ8hEH1cHsvES6j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-      figcaption Video. Programación orientada a objetos conceptos y modelado.
-
-
-
-    
+<template>
+  <div class="curso-main-container introduccion">
+    <BannerInterno></BannerInterno>
+    <div class="container tarjeta tarjeta--blanca p-4 p-md-5 mb-5">
+      <div class="titulo-principal color-acento-contenido">
+        <div class="titulo-principal__numero">
+          <span><i class="fas fa-info"></i></span>
+        </div>
+        <h1>Introducción</h1>
+      </div>
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 my-3 order-1">
+          <div class="brad p-3 mb-4">
+            <p class="mb-0">
+              En el ámbito del análisis de datos, contar con fuentes confiables
+              y aplicar técnicas adecuadas de recolección de información es
+              crucial para obtener resultados precisos y valiosos. La calidad de
+              los datos recopilados y su adecuada selección determinan en gran
+              medida la utilidad y precisión de los análisis posteriores, ya que
+              datos incompletos, sesgados o malinterpretados pueden llevar a
+              conclusiones erróneas o poco útiles.
+            </p>
+          </div>
+          <div class="row justify-content-center align-items-center bg8 mb-4">
+            <div class="col-lg-4 col-8 mb-lg-0 mb-4 h-100">
+              <img class="img-fluid" src="@/assets/curso/cf1/2.png" alt="" />
+            </div>
+            <div class="col-lg-8 bgi">
+              <div class="p-4">
+                <p class="mb-0">
+                  ¿De dónde provienen los datos y cómo se asegura su validez y
+                  pertinencia para un análisis efectivo? Este componente
+                  formativo profundiza en estas cuestiones esenciales,
+                  explorando las fuentes de datos más comunes, las técnicas de
+                  recolección, y los métodos para evaluar su confiabilidad. A
+                  través de una combinación de teoría y práctica, se cubrirán
+                  tanto fuentes tradicionales como datos obtenidos de
+                  plataformas digitales y redes sociales, bases de datos
+                  públicas, encuestas y estudios de campo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p>
+            Durante el desarrollo de este curso, el aprendiz adquirirá
+            habilidades para identificar, seleccionar y validar diversas fuentes
+            de información, adaptando las técnicas de recolección a diferentes
+            contextos y tipos de datos. Mediante estudios de caso y ejercicios
+            prácticos, se abordarán las mejores prácticas para la recolección de
+            datos en el entorno actual, con herramientas digitales y enfoques
+            estructurados que garantizan datos de calidad para el análisis.
+          </p>
+        </div>
+        <div class="col-lg-4 col-8 mb-lg-0 mb-4 my-3 order-lg-2">
+          <img class="img-a img-t" src="@/assets/curso/cf1/1.png" alt="" />
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10 my-3">
+          <div
+            class="row justify-content-center align-items-center bg7 p-4 brad mb-5"
+          >
+            <div class="col-lg-auto">
+              <img class="img-a img-t" src="@/assets/curso/cf1/3.svg" alt="" />
+            </div>
+            <div class="col pt-lg-0 pt-md-4">
+              <p class="mb-0">
+                El proceso de recolección de datos es la base sobre la cual se
+                construye cualquier análisis exitoso. Como señala un principio
+                fundamental en el campo del análisis: la precisión del análisis
+                es tan buena como la precisión de los datos que lo sustentan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h4 class="mb-4">
+        ¡Te damos una maravillosa bienvenida a las fuentes y técnicas de
+        recolección de datos!
+      </h4>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-12">
+          <figure>
+            <div class="video">
+              <iframe
+                width="1236"
+                height="695"
+                src="https://www.youtube.com/embed/gYb2piVtFHY?si=JrOknn-QVhU1Ho3g"
+                title="Fuentes y técnicas de recolección de datos para análisis"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen="allowfullscreen"
+              ></iframe>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>

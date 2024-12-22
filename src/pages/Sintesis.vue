@@ -1,32 +1,96 @@
-<template lang="pug">
-.curso-main-container.pb-3
-  BannerInterno(icono="fas fa-sitemap" titulo="Síntesis")
-  .container.tarjeta.tarjeta--blanca.p-4.p-md-5
-    p.mb-5 El diagrama representa la estructura integral del componente sobre programación orientada a objetos, centrado en los conceptos y el modelado de #[em software] bajo este paradigma. Partiendo del concepto central de la POO, se ramifica en cuatro áreas esenciales: fundamentos de programación orientada a objetos, principios de diseño, modelado UML y patrones con arquitectura. Cada una de estas áreas incorpora subtemas específicos que conforman los elementos fundamentales para comprender y aplicar eficazmente el paradigma orientado a objetos en el desarrollo de #[em software.]
-    .row.justify-content-center.mb-5
-      .col-lg-3.col-7.mb-lg-0.mb-3: img(src='@/assets/curso/temas/36.png', alt='')
-      .col-lg-5.mb-lg-0.mb-3
-        .p-4(style="background-color: #E6F0FC")
-          p.mb-0 Esta organización ilustra el flujo lógico del aprendizaje y aplicación de la POO. Comienza con la comprensión de los conceptos fundamentales como clases, objetos y encapsulamiento, proporcionando una base sólida. Luego, profundiza en los principios de diseño, abordando la herencia, el polimorfismo y los principios SOLID, que son esenciales para crear #[em software] robusto y mantenible. A continuación, se enfoca en el modelado UML como herramienta para visualizar y documentar el diseño orientado a objetos. Finalmente, culmina con la aplicación práctica a través de patrones de diseño y arquitectura limpia.
-      .col-lg-4.col-7: img(src='@/assets/curso/temas/37.png', alt='')
-    .row.justify-content-center.mb-5
-      .col-lg-5.col-7.mb-lg-0.mb-3: img(src='@/assets/curso/temas/38.png', alt='')
-      .col-lg-7
-        .p-4.tarjeta.color-primario--borde.border-2.bg-white
-          p.mb-0 El diagrama funciona como una hoja de ruta visual para comprender la estructura y el alcance del componente, permitiendo al estudiante visualizar rápidamente la progresión del aprendizaje y las conexiones entre los diferentes temas. Los elementos transversales (diseño modular, reutilización y mantenibilidad) se entrelazan con todas las áreas, enfatizando su importancia continua en el desarrollo orientado a objetos. Se sugiere utilizarlo como referencia para organizar el estudio y entender cómo se integran los diversos aspectos en el desarrollo de #[em software] orientado a objetos, garantizando la creación de aplicaciones bien estructuradas y mantenibles. 
-
-    .row.justify-content-center
-      .col-lg-8.mb-5
-        figure
-          img(src="@/assets/curso/temas/sintesis.svg", alt="La Figura 3 se denomina «Síntesis temática del componente», es un mapa mental con el tema central “Programación orientada a objetos: conceptos y modelado, del cual se desprenden cuatro ramas principales —Fundamentos POO, principios diseño, modelado UML, patrones y arquitectura— cada una detallada con sus subtemas específicos.")
-    .row.justify-content-center.mb-5
-      .col-3
-        a.anexo.mb-5(:href="obtenerLink('/downloads/Sintesis.pdf')" target="_blank")
-          .anexo__icono
-            img(src="@/assets/bullets/icono-pdf.svg")
-          .anexo__texto
-            p Anexo. Síntesis
-
+<template>
+  <div class="curso-main-container pb-3">
+    <BannerInterno icono="fas fa-sitemap" titulo="Síntesis"></BannerInterno>
+    <div class="container tarjeta tarjeta--blanca p-4 p-md-5">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-4 col-8 mb-lg-0 mb-4 my-lg-0 my-3 j1">
+          <img class="img-fluid img-a" src="@/assets/curso/cf1/122.png" />
+        </div>
+        <div class="col-lg-8 my-lg-0 my-3">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-7 my-lg-0 my-3">
+              <div class="bg30 text-white p-3 brad j1 h-100">
+                <p>
+                  El siguiente diagrama proporciona una visión general
+                  sintetizada de los principales temas abordados en este
+                  componente sobre la recolección de datos para análisis. Este
+                  mapa está diseñado para ayudar al lector a visualizar la
+                  interrelación entre las diversas áreas que constituyen el
+                  proceso de recolección de datos en el contexto estadístico a
+                  partir de los diversos tipos de fuentes y de las técnicas que
+                  se pueden usar para la recolección y el análisis de los datos.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5 my-lg-0 col-8 mb-lg-0 mb-4 my-3 j1">
+              <img class="img-fluid img-a" src="@/assets/curso/cf1/106.png" />
+            </div>
+          </div>
+          <div
+            class="row justify-content-center align-items-center bg19 br-d p-4 brad"
+          >
+            <div class="col-lg-auto">
+              <img
+                class="img-a img-t"
+                src="@/assets/curso/cf1/121.png"
+                alt=""
+              />
+            </div>
+            <div class="col pt-lg-0 pt-md-4">
+              <p class="mb-0">
+                En el origen del diagrama se encuentra el concepto principal de
+                "Recolección de datos para análisis", del cual se derivan temas
+                fundamentales: conceptos generales de estadística, población y
+                muestra en estadística, procesos estadísticos, técnicas de
+                muestreo, inferencia estadística, requerimientos para la
+                recolección de datos, fuentes de datos y determinación de la
+                muestra. Cada una de estas áreas se subdivide en conceptos
+                clave, reflejando la estructura y el contenido del componente.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mb-5">
+        Este diagrama actúa como una guía visual para explorar los conceptos
+        presentados en el texto, permitiendo al lector comprender rápidamente la
+        amplitud y la organización de los temas tratados, así como sus
+        conexiones. Al revisar este mapa, el aprendiz podrá observar cómo los
+        diferentes aspectos de la estadística y la recolección de datos se
+        entrelazan para formar un proceso integral y sistemático. Se invita a
+        utilizar este diagrama como un complemento al contenido detallado del
+        componente, sirviendo como una referencia rápida y un recordatorio
+        visual de los conceptos esenciales en la recolección de datos para
+        análisis estadístico.
+      </p>
+      <div class="row justify-content-center">
+        <div class="col-lg-10 mb-5 col-8 mb-lg-0 mb-4 bgs brad p-5">
+          <figure>
+            <img
+              src="@/assets/curso/temas/sintesis.svg"
+              alt="La Figura 3 se denomina «Síntesis temática del componente», allí se mencionan los principales temas tratados sobre la limpieza y transformación de datos —como sus fundamentos, importación, técnicas, herramientas y prácticas— y algunos subtemas que los integran."
+            />
+          </figure>
+        </div>
+        <div class="col-auto">
+          <div class="mt-4">
+            <a
+              class="anexo mb-5"
+              :href="obtenerLink('/downloads/Sintesis.pdf')"
+              target="_blank"
+            >
+              <div class="anexo__icono">
+                <img src="@/assets/bullets/icono-pdf.svg" />
+              </div>
+              <div class="anexo__texto">
+                <p>Anexo. Síntesis</p>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>

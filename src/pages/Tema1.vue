@@ -1,201 +1,298 @@
-<template lang="pug">
-.curso-main-container.pb-3
-  BannerInterno
-  .container.tarjeta.tarjeta--blanca.p-4.p-md-5.mb-5
-    .titulo-principal.color-acento-contenido
-      .titulo-principal__numero
-        span 1
-      h1 Fundamentos de la Programación Orientada a Objetos
-    .row.justify-content-center.align-items-center.mb-5
-      .col-lg-4.col-7.mb-lg-0.mb-3: img(src='@/assets/curso/temas/4.png', alt='')
-      .col-lg-8
-        .p-5(style="background-color: #DED5DB ")
-          p.mb-0 La programación orientada a objetos (POO) representa un cambio paradigmático en la forma de diseñar y desarrollar software, ofreciendo una manera natural de representar y manipular conceptos del mundo real en código. Este capítulo explora los fundamentos esenciales de este paradigma, estableciendo las bases para el desarrollo de software robusto y mantenible.
-    Separador
-    #t_1_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
-      h2 1.1 Introducción al paradigma orientado a objetos
-    p.mb-5 La programación orientada a objetos surge como respuesta a las limitaciones de la programación procedural, especialmente cuando los sistemas se vuelven más complejos. Este paradigma se basa en la idea de organizar el código en unidades cohesivas llamadas objetos, que combinan datos y comportamiento en una sola entidad.
-      br
-      br
-      |#[b El paradigma POO ofrece varios beneficios fundamentales sobre otros enfoques de programación:]
-    .p-5.mb-4(style="background-color:#EEF4F4 ").mb-4
-      .row.justify-content-center.mb-5
-        .col-lg-4.col-7.mb-lg-0.mb-3: img(src='@/assets/curso/temas/5.svg', alt='')
-        .col-lg-5
-          ol.lista-ol.lista-ol--separador
-            li.d-flex
-              span.text-bold(style="background-color: #13DE61 ").p-1.px-2.text-white 1
-              p.mb-0 Mayor modularidad y reutilización de código.
-            li.d-flex
-              span.text-bold(style="background-color: #13DE61 ").p-1.px-2.text-white 2
-              p.mb-0 Mejor mantenibilidad y escalabilidad.
-            li.d-flex
-              span.text-bold(style="background-color: #13DE61 ").p-1.px-2.text-white 3
-              p.mb-0 Representación más natural de conceptos del mundo real.
-            li.d-flex
-              span.text-bold(style="background-color: #13DE61 ").p-1.px-2.text-white 4
-              p.mb-0 Mayor facilidad para el trabajo en equipo.
-            li.d-flex
-              span.text-bold(style="background-color: #13DE61 ").p-1.px-2.text-white 5
-              p.mb-0 Mejor encapsulamiento y protección de datos.
-    Separador  
-    #t_1_2.titulo-segundo.color-acento-contenido(data-aos='fade-right')
-      h2 1.2 Clases y objetos: conceptos básicos
-    p.mb-4 Una clase es un plano o plantilla para crear objetos, definiendo sus propiedades y comportamientos. Un objeto, por otro lado, es una instancia específica de una clase. Esta relación entre clases y objetos es fundamental en POO, y se puede visualizar mediante la siguiente tabla comparativa:
-    .row.justify-content-center.mb-5
-      .col-lg-8.mb-lg-0.mb-3
-        .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Tabla 1.
-          span Características principales entre clases y objetos en programación orientada a objetos
-        .tabla-a.color-acento-botones.mb-5
-          table
-            caption Fuente: OIT, 2024.
-            thead(style="background-color: #13DE61").border-0
-              tr
-                th Aspecto
-                th Clase
-                th Objeto
-                
-            tbody
-              tr
-                td Definición
-                td Plantilla o plano
-                td Instancia concreta
-              tr
-                td Naturaleza
-                td Abstracta
-                td Concreta
-              tr
-                td Memoria
-                td No ocupa memoria para atributos
-                td Ocupa memoria para sus valores
-              tr
-                td Creación
-                td Se define una vez
-                td Se pueden crear múltiples instancias
-              tr
-                td Ejemplo
-                td Clase Auto (plano)
-                td miAuto (instancia específica)
-              tr
-                td Tiempo de vida
-                td Durante toda la ejecución
-                td Desde su creación hasta su destrucción
-              tr
-                td Características
-                td Define estructura y comportamiento
-                td Contiene valores específicos
-      .col-lg-4.col-6.mb-lg-0.mb-3: img(src='@/assets/curso/temas/6.svg', alt='')         
-    Separador 
-    #t_1_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
-      h2 1.3 Atributos, métodos y encapsulamiento
-    p.mb-4 Los atributos son las características o propiedades que definen un objeto, mientras que los métodos son las acciones que puede realizar. El encapsulamiento es el principio que permite ocultar los detalles internos de implementación y exponer solo lo necesario al mundo exterior.Los atributos en POO pueden tener diferentes niveles de visibilidad:
-    .row.justify-content-center.mb-5
-      .col-lg-4.col-3.mb-lg-0.mb-3
-        .tarjeta.hover.p-4.h-100.shadow
-          .row.justify-content-center.align-items-center
-            .col-lg-3.col-5.mb-lg-0.mb-3: img(src='@/assets/curso/temas/7.svg', alt='')
-            .col-lg-9
-              h4.fst-italic Private.
-              p.mb-0 Solo accesible dentro de la clase.
-      .col-lg-4.col-3.mb-lg-0.mb-3
-        .tarjeta.hover.p-4.h-100.shadow
-          .row.justify-content-center.align-items-center
-            .col-lg-3.col-5.mb-lg-0.mb-3: img(src='@/assets/curso/temas/12.svg', alt='')
-            .col-lg-9
-              h4.fst-italic Protected.
-              p.mb-0 Accesible en la clase y sus descendientes.
-      .col-lg-4.col-3.mb-lg-0.mb-3
-        .tarjeta.hover.p-4.h-100.shadow
-          .row.justify-content-center.align-items-center
-            .col-lg-3.col-5.mb-lg-0.mb-3: img(src='@/assets/curso/temas/13.svg', alt='')
-            .col-lg-9
-              h4.fst-italic Public. 
-              p.mb-0 Accesible desde cualquier parte del programa.
-    p.bm-3 Un ejemplo práctico de estos conceptos sería:
-    .row.justify-content-center.mb-5
-      .col-lg-6.mb-lg-0.mb-3
-        .tarjeta-codigo.overflow-hidden(style="background-color: #110628 ;border-radius: 10px")
-          .tarjeta-codigo.p-3.mb-3(style="background-color: #3A1D71"): img.ms-4(src='@/assets/curso/temas/botones.svg', alt='' style="width: 94px ")
-          .p-4
-            code(style="color: white ").fst-italic class CuentaBancaria:
-              br
-              |def __init__(self, titular, saldo_inicial):
-              br
-              |self.__titular = titular          # Atributo privado
-              br
-              |self.__saldo = saldo_inicial      # Atributo privado
-              br
-              br
-              |def depositar(self, monto):           # Método público
-              br
-              |if monto > 0:
-              br
-              |self.__saldo += monto
-              br
-              |return True
-              br
-              |return False
-              br
-              br
-              |def obtener_saldo(self):              # Método público (getter)
-              br
-              |return self.__saldo
-      .col-lg-6
-        p.mb-4 El encapsulamiento protege la integridad de los datos al:
-        .p-5(style="background-color: #E6F0FC")
-          .row.justify-content-center.align-items-center
-            .col-lg-6.mb-lg-0.mb-3
-              ul.lista-ul--color
-                li.d-flex
-                  i.fas.fa-check-circle(style="color: #1169E3")
-                  p.mb-0 Prevenir acceso directo a los atributos.
-                li.d-flex
-                  i.fas.fa-check-circle(style="color: #1169E3")
-                  p.mb-0 Permitir validaciones en las modificaciones.
-                li.d-flex
-                  i.fas.fa-check-circle(style="color: #1169E3")
-                  p.mb-0 Ocultar la implementación interna.
-                li.d-flex
-                  i.fas.fa-check-circle(style="color: #1169E3")
-                  p.mb-0 Facilitar cambios futuros sin afectar el código cliente.
-            .col-lg-6: img(src='@/assets/curso/temas/8.svg', alt='')
-    p.mb-4 La combinación adecuada de atributos, métodos y encapsulamiento permite crear objetos que son:
-    .row.justify-content-center.mb-5
-      .col-lg-8
-        .p-5(style="background-color: #E6FBEE").mb-4
-          .row.justify-content-center.align-items-center
-            .col-lg-6.mb-lg-0.mb-3
-              ul.lista-ul--color
-                li.d-flex
-                  i.fas.fa-check-circle(style="color: #1169E3")
-                  p.mb-0 #[b Cohesivos:] todas sus partes trabajan juntas para un propósito común.
-                li.d-flex
-                  i.fas.fa-check-circle(style="color: #1169E3")
-                  p.mb-0 #[b Seguros:] los datos están protegidos de modificaciones no autorizadas.
-                li.d-flex
-                  i.fas.fa-check-circle(style="color: #1169E3")
-                  p.mb-0 #[b Mantenibles:] los cambios internos no afectan al código que usa la clase.
-                li.d-flex
-                  i.fas.fa-check-circle(style="color: #1169E3")
-                  p.mb-0 #[b Reutilizables:] pueden ser utilizados en diferentes contextos.
-            .col-lg-4: img(src='@/assets/curso/temas/9.svg', alt='')
-        .row.justify-content-center.mb-5
-          .col-lg-6.mb-lg-0.mb-3
-            .p-4(style="background-color: #E6F0FC ").h-100
-              p.mb-0 La programación orientada a objetos establece una base sólida para el desarrollo de software moderno, permitiendo crear sistemas más organizados, mantenibles y escalables. En los siguientes capítulos, exploraremos principios más avanzados y técnicas de diseño que nos permitirán aprovechar todo el potencial de este paradigma.
-          .col-lg-6.mb-lg-0.mb-3
-            .p-4(style="background-color: #E6F0FC ").h-100
-              p.mb-0 La comprensión profunda de estos conceptos fundamentales es esencial para cualquier desarrollador que trabaje con POO, ya que constituyen la base sobre la cual se construyen aplicaciones más complejas y robustas. El dominio de estos conceptos permite tomar mejores decisiones de diseño y crear código más limpio y mantenible.
-      .col-lg-4.d-none.d-lg-block: img(src='@/assets/curso/temas/9.png', alt='')
-
-
+<template>
+  <div class="curso-main-container pb-3">
+    <BannerInterno></BannerInterno>
+    <div class="container tarjeta tarjeta--blanca p-4 p-md-5 mb-5">
+      <div class="titulo-principal color-acento-contenido">
+        <div class="titulo-principal__numero"><span>1</span></div>
+        <h1>Conceptos generales de estadística</h1>
+      </div>
+      <div class="row justify-content-center align-items-center mb-5">
+        <div class="col-lg-auto">
+          <img class="img-a img-t" src="@/assets/curso/t1/1.svg" alt="" />
+        </div>
+        <div class="col pt-lg-0 pt-md-4">
+          <p class="mb-0">
+            La estadística es una disciplina matemática que se ocupa de la
+            recolección, análisis, interpretación y presentación de datos. Es
+            esencial en diversos campos como la economía, la biología, la
+            ingeniería, y las ciencias sociales, ya que proporciona las
+            herramientas para realizar investigaciones basadas en datos y tomar
+            decisiones informadas.
+          </p>
+        </div>
+      </div>
+      <div id="t_1_1" class="titulo-segundo color-acento-botones mt-5">
+        <h2>1.1 Definición de estadística y su propósito</h2>
+      </div>
+      <div class="row justify-content-center align-items-center mb-5">
+        <div class="col-lg-7">
+          <p>
+            La estadística se puede definir como la ciencia que estudia cómo
+            recoger, organizar, analizar e interpretar datos para extraer
+            conclusiones y tomar decisiones. Los datos pueden provenir de
+            diversas fuentes y representan observaciones cuantitativas o
+            cualitativas sobre algún fenómeno o conjunto de fenómenos.
+          </p>
+          <div class="row justify-content-center align-items-center mb-5">
+            <div class="col-lg-2">
+              <img class="img-t img-a" src="@/assets/curso/t1/2.svg" />
+            </div>
+            <div class="col-lg-10">
+              <p class="mb-0">
+                El propósito principal de la estadística es transformar estos
+                datos en información útil para facilitar la toma de decisiones,
+                describir situaciones o fenómenos y hacer predicciones sobre
+                comportamientos futuros. La estadística proporciona métodos
+                tanto para describir lo que ocurre en un conjunto de datos
+                (estadística descriptiva) como para hacer inferencias y
+                conclusiones más generales a partir de esos datos (estadística
+                inferencial).
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <img class="img-t img-a" src="@/assets/curso/t1/3.png" />
+        </div>
+      </div>
+      <Separador></Separador>
+      <div id="t_1_2" class="titulo-segundo color-acento-botones">
+        <h2>1.2 Clasificación de la estadística: descriptiva e inferencial</h2>
+      </div>
+      <p>
+        La estadística se divide en dos ramas principales: la
+        <b>estadística descriptiva</b> y la <b>estadística inferencial</b>.
+      </p>
+      <div class="row justify-content-center align-items-center mb-5">
+        <div class="col-lg-11">
+          <div class="titulo-sexto color-acento-contenido aos-init mt-5">
+            <h5>Tabla 1.</h5>
+            <span>Clasificación de la estadística</span>
+          </div>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr class="text-center">
+                  <th class="bg-head py-3" style="width: 200px;">
+                    Rama de la Estadística
+                  </th>
+                  <th class="bg-head py-3" style="width: 300px;">
+                    Descripción
+                  </th>
+                  <th class="bg-head py-3" style="width: 200px;">Objetivo</th>
+                  <th class="bg-head py-3" style="width: 200px;">
+                    Herramientas Principales
+                  </th>
+                  <th class="bg-head py-3" style="width: 200px;">Resultados</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Estadística Descriptiva</th>
+                  <td>
+                    <p>
+                      Se refiere a los métodos que permiten resumir y describir
+                      las características principales de un conjunto de datos.
+                    </p>
+                    <p>
+                      No hace generalizaciones o inferencias más allá de los
+                      datos analizados; se limita a describir lo que se observa.
+                    </p>
+                  </td>
+                  <td>Resumir y describir datos de una muestra o población.</td>
+                  <td>
+                    <p>
+                      - <b>Medidas de tendencia central</b>: media, mediana,
+                      moda.
+                    </p>
+                    <p>
+                      - <b>Medidas de dispersión</b>: desviación estándar,
+                      varianza.
+                    </p>
+                    <p>
+                      - <b>Representaciones gráficas</b>: histogramas, diagramas
+                      de barras, tablas de frecuencias.
+                    </p>
+                  </td>
+                  <td>
+                    Proporciona información exacta y precisa sobre los datos en
+                    cuestión.
+                  </td>
+                </tr>
+                <tr>
+                  <th>Estadística Inferencial</th>
+                  <td>
+                    Va más allá de la descripción de los datos y se centra en
+                    hacer generalizaciones sobre una población a partir de una
+                    muestra. Utiliza métodos probabilísticos para estimar
+                    parámetros poblacionales, realizar pruebas de hipótesis y
+                    hacer predicciones.
+                  </td>
+                  <td>
+                    Hacer generalizaciones y predicciones sobre la población a
+                    partir de una muestra representativa.
+                  </td>
+                  <td>
+                    <p>- Intervalos de confianza.</p>
+                    <p>- Pruebas de hipótesis.</p>
+                    <p>- Estimación de parámetros.</p>
+                  </td>
+                  <td>
+                    Trabaja con probabilidades e incertidumbre, ya que las
+                    conclusiones se basan en una muestra y no en toda la
+                    población. Permite hacer predicciones y generalizaciones
+                    aplicables a la población en general
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <figcaption
+            class="border border-secundary border-start-0 border-end-0 border-2 mt-2 mb-4"
+          >
+            <p class="text-center text-dark mb-0">Fuente: OIT, 2024.</p>
+          </figcaption>
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center mb-5">
+        <div class="col-lg-10">
+          <div class="bgi p-4 brad">
+            <p>
+              <b
+                >Ejemplo: diferencia entre estadística descriptiva e
+                inferencial</b
+              >
+            </p>
+            <p>
+              Supongamos que estamos analizando las edades de los empleados en
+              una empresa y tenemos los siguientes datos de una muestra de 10
+              empleados:
+            </p>
+            <p>Edades = { 25, 30, 35, 40, 45, 50, 55, 60, 65, 70 }</p>
+            <p>
+              <b>Estadística descriptiva</b>: podemos calcular medidas como la
+              media y la desviación estándar de la muestra.
+            </p>
+            <img class="img-t img-a" src="@/assets/curso/t1/4.png" />
+            <p class="mt-4">
+              <b>Estadística inferencial</b>: si tomamos una muestra similar de
+              otra empresa con 100 empleados, podemos usar un intervalo de
+              confianza para estimar la media de la población de empleados.
+            </p>
+            <p>
+              Si la media muestral es = 47.5, con un error de <i>SE</i> - 15.14
+              / = 4.78, el intervalo de confianza del 95 % sería:
+            </p>
+            <p class="text-center">
+              <i>IC = 47.5 + 1.96 . 4.79 = ( 38.12, 56.88)</i>
+            </p>
+            <p>
+              Esto significa que con un 95 % de confianza, la edad promedio de
+              la población de empleados está entre 38.12 y 56.88 años.
+            </p>
+          </div>
+        </div>
+      </div>
+      <Separador> </Separador>
+      <div id="t_1_3" class="titulo-segundo color-acento-botones">
+        <h2>
+          1.3 Aplicaciones prácticas de la estadística en la recolección de
+          datos
+        </h2>
+      </div>
+      <p>
+        La estadística se aplica en numerosas áreas del conocimiento y en
+        diversas situaciones del mundo real. Algunas de sus aplicaciones más
+        comunes incluyen:
+      </p>
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-3 my-3 d-none d-lg-block">
+          <img class="img-a img-t" src="@/assets/curso/t1/5.png" alt="" />
+        </div>
+        <div class="col-lg-9 my-3">
+          <AccordionRED tipo="a" clase-tarjeta="tarjeta tarjeta--azul">
+            <div
+              class="row justify-content-center"
+              titulo="Investigación médica"
+            >
+              <div class="col-lg-12 my-3">
+                <p>
+                  En estudios clínicos, la estadística se utiliza para
+                  determinar la efectividad de un tratamiento a partir de datos
+                  obtenidos de un grupo de pacientes. Los investigadores
+                  recolectan datos sobre el estado de salud de los pacientes
+                  antes y después de recibir el tratamiento, y luego usan
+                  métodos estadísticos para comparar los resultados.
+                </p>
+              </div>
+            </div>
+            <div class="row justify-content-center" titulo="Ciencia social">
+              <div class="col-lg-12 my-3">
+                <p>
+                  En estudios de encuestas o investigaciones sociales, la
+                  estadística descriptiva puede resumir las respuestas de los
+                  encuestados sobre diversos temas, como la opinión política o
+                  el nivel de satisfacción con servicios públicos. La
+                  estadística inferencial se utiliza para hacer inferencias
+                  sobre el comportamiento de toda la población a partir de las
+                  respuestas de una muestra representativa.
+                </p>
+              </div>
+            </div>
+            <div
+              class="row justify-content-center"
+              titulo="&lt;em&gt;Marketing&lt;/em&gt;"
+            >
+              <div class="col-lg-12 my-3">
+                <p>
+                  Las empresas utilizan la estadística para analizar patrones de
+                  compra de los consumidores y predecir tendencias futuras. Los
+                  análisis descriptivos permiten entender el comportamiento de
+                  compra actual, mientras que los análisis inferenciales pueden
+                  ayudar a predecir futuras ventas y adaptar estrategias de
+                  <i>marketing</i>.
+                </p>
+              </div>
+            </div>
+            <div
+              class="row justify-content-center"
+              titulo="Producción industrial"
+            >
+              <div class="col-lg-12 my-3">
+                <p>
+                  En control de calidad, la estadística es fundamental para
+                  monitorear procesos y asegurar que los productos cumplan con
+                  los estándares requeridos. Se recolectan datos sobre muestras
+                  de productos fabricados, y a partir de los análisis
+                  estadísticos se decide si el proceso debe ajustarse o
+                  continuar.
+                </p>
+              </div>
+            </div>
+            <div
+              class="row justify-content-center"
+              titulo="Investigación científica"
+            >
+              <div class="col-lg-12 my-3">
+                <p>
+                  En campos como la biología o la física, la estadística es
+                  vital para interpretar los resultados de experimentos. Los
+                  científicos recopilan datos experimentales, los analizan y
+                  hacen inferencias sobre teorías o hipótesis a partir de esos
+                  datos.
+                </p>
+              </div>
+            </div>
+          </AccordionRED>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'Tema1',
-  components: {},
   data: () => ({
     // variables de vue
   }),

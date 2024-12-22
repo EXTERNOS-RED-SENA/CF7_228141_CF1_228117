@@ -37,79 +37,99 @@ export default {
     return {
       glosarioData: [
         {
-          termino: 'Abstracción',
+          termino: 'Análisis de Datos',
           significado:
-            'Proceso de identificar características esenciales de un objeto, ignorando los detalles no relevantes',
+            'Paso del proceso estadístico donde los datos recolectados se organizan y estudian para identificar patrones y relaciones.',
         },
         {
-          termino: 'Clase',
+          termino: 'Control de Calidad',
           significado:
-            'Plantilla o modelo que define las propiedades y comportamientos de un tipo de objeto',
+            'Prácticas implementadas durante la recolección de datos para asegurar precisión y confiabilidad.',
         },
         {
-          termino: 'Composición',
+          termino: 'Dato',
           significado:
-            'Relación fuerte entre clases donde una clase contiene a otra y es responsable de su ciclo de vida',
+            'Unidad básica de información sin procesar, obtenida a través de observaciones, encuestas u otras fuentes.',
         },
         {
-          termino: 'Encapsulamiento',
+          termino: 'Estadística',
           significado:
-            'Principio que oculta los detalles internos de una clase y expone solo lo necesario',
+            'Ciencia que se dedica a la recolección, organización, análisis e interpretación de datos para la toma de decisiones.',
         },
         {
-          termino: 'Herencia',
+          termino: 'Estadística Descriptiva',
           significado:
-            'Mecanismo que permite a una clase heredar propiedades y métodos de otra clase',
+            'Rama de la estadística que se enfoca en resumir y describir las características principales de un conjunto de datos.',
         },
         {
-          termino: 'Interfaz',
+          termino: 'Estadística Inferencial',
           significado:
-            'Contrato que especifica qué métodos debe implementar una clase',
+            'Rama de la estadística que permite hacer generalizaciones y predicciones sobre una población a partir de una muestra.',
         },
         {
-          termino: 'Método',
+          termino: 'Fuente Primaria',
           significado:
-            'Función que define el comportamiento de los objetos de una clase',
+            'Datos recolectados directamente por el investigador específicamente para el estudio en cuestión.',
         },
         {
-          termino: 'Objeto',
+          termino: 'Fuente Secundaria',
           significado:
-            'Instancia específica de una clase que contiene datos y comportamiento',
+            'Datos previamente recopilados por otros y utilizados en el análisis actual.',
         },
         {
-          termino: 'Patrón de Diseño',
+          termino: 'Interpretación',
           significado:
-            'Solución reutilizable a un problema común en el diseño de <em>software</em>',
+            'Fase en la que se analizan los resultados para sacar conclusiones y responder preguntas de investigación.',
         },
         {
-          termino: 'Polimorfismo',
+          termino: 'Intervalo de Confianza',
           significado:
-            'Capacidad de un objeto para tomar diferentes formas y responder de manera distinta al mismo mensaje',
+            'Rango de valores dentro del cual se espera que se encuentre un parámetro poblacional con un nivel de confianza especificado.',
         },
         {
-          termino: 'Principios SOLID',
+          termino: 'Muestra',
           significado:
-            'Conjunto de cinco principios fundamentales para el diseño orientado a objetos',
+            'Subconjunto representativo de la población, utilizado para hacer inferencias sobre el total.',
         },
         {
-          termino: 'Refactorización',
+          termino: 'Muestreo Aleatorio Simple',
           significado:
-            'Proceso de reestructurar código existente sin cambiar su comportamiento externo',
+            'Técnica de muestreo en la que todos los elementos de la población tienen la misma probabilidad de ser seleccionados.',
         },
         {
-          termino: 'UML',
+          termino: 'Muestreo Estratificado',
           significado:
-            'Lenguaje Unificado de Modelado, utilizado para visualizar y documentar sistemas de <em>software</em>',
+            'Método de muestreo en el que la población se divide en subgrupos homogéneos, seleccionando una muestra de cada uno.',
         },
         {
-          termino: 'Visibilidad',
+          termino: 'Muestreo por Conglomerados',
           significado:
-            'Nivel de acceso que tienen otros objetos a los miembros de una clase',
+            'Técnica en la que la población se agrupa en conglomerados y se seleccionan algunos para ser estudiados en su totalidad.',
         },
         {
-          termino: 'CASE',
+          termino: 'Parámetro',
           significado:
-            'Herramientas de Ingeniería de <em>Software</em> Asistida por Computadora para el diseño y modelado',
+            'Valor numérico que representa una característica de la población, como la media o la desviación estándar.',
+        },
+        {
+          termino: 'Población',
+          significado:
+            'Conjunto total de individuos, objetos o eventos de interés en un estudio estadístico.',
+        },
+        {
+          termino: 'Prueba de Hipótesis',
+          significado:
+            'Procedimiento estadístico utilizado para evaluar si una afirmación sobre un parámetro poblacional es consistente con los datos de la muestra.',
+        },
+        {
+          termino: 'Sesgo',
+          significado:
+            'Error sistemático en la recolección de datos que distorsiona los resultados y afecta la validez de las conclusiones.',
+        },
+        {
+          termino: 'Variable',
+          significado:
+            'Característica o atributo que puede ser medido en los individuos de un estudio; puede ser cualitativa o cuantitativa.',
         },
       ],
     }

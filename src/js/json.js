@@ -15,22 +15,24 @@ export default {
       {
         nombreRuta: 'tema1',
         numero: '1',
-        titulo: 'Fundamentos de la Programación Orientada a Objetos	',
+        titulo: 'Conceptos generales de estadística',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '1.1',
-            titulo: 'Introducción al paradigma orientado a objetos	',
+            titulo: 'Definición de estadística y su propósito',
             hash: 't_1_1',
           },
           {
             numero: '1.2',
-            titulo: 'Clases y objetos: conceptos básicos	',
+            titulo:
+              'Clasificación de la estadística: descriptiva e inferencial',
             hash: 't_1_2',
           },
           {
             numero: '1.3',
-            titulo: 'Atributos, métodos y encapsulamiento',
+            titulo:
+              'Aplicaciones prácticas de la estadística en la recolección de datos',
             hash: 't_1_3',
           },
         ],
@@ -39,27 +41,28 @@ export default {
       {
         nombreRuta: 'tema2',
         numero: '2',
-        titulo: 'Principios de diseño orientado a objetos	',
+        titulo: 'Población y muestra en estadística',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '2.1',
-            titulo: 'Herencia y polimorfismo	',
+            titulo: 'Diferencias entre población y muestra',
             hash: 't_2_1',
           },
           {
             numero: '2.2',
-            titulo: 'Composición y agregación',
+            titulo: 'Criterios para definir una muestra representativa',
             hash: 't_2_2',
           },
           {
             numero: '2.3',
-            titulo: 'Principios SOLID en POO	',
+            titulo: 'Criterios para seleccionar una muestra representativa',
             hash: 't_2_3',
           },
           {
             numero: '2.4',
-            titulo: 'Del diseño a la implementación: consideraciones prácticas	',
+            titulo:
+              'Relación entre tamaño de la muestra y precisión de los resultados',
             hash: 't_2_4',
           },
         ],
@@ -67,46 +70,206 @@ export default {
       {
         nombreRuta: 'tema3',
         numero: '3',
-        titulo: 'Modelado y diseño UML	',
+        titulo: 'Procesos estadísticos',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '3.1',
-            titulo: 'Diagramas de clases UML',
+            titulo:
+              'Fases del proceso estadístico: recolección, análisis e interpretación',
             hash: 't_3_1',
           },
           {
             numero: '3.2',
-            titulo: 'Relaciones entre clases',
+            titulo:
+              'Definición y objetivos de cada fase del proceso estadístico',
             hash: 't_3_2',
           },
           {
             numero: '3.3',
-            titulo: 'Herramientas CASE para modelado',
+            titulo:
+              'Importancia de la correcta recolección de datos para evitar sesgos',
             hash: 't_3_3',
+          },
+          {
+            numero: '3.4',
+            titulo:
+              'Control de calidad en la recolección de datos estadísticos',
+            hash: 't_3_4',
           },
         ],
       },
       {
         nombreRuta: 'tema4',
         numero: '4',
-        titulo: 'Patrones y arquitectura orientada a objetos',
+        titulo: 'Técnicas de muestreo',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '4.1',
-            titulo: 'Patrones de diseño fundamentales',
+            titulo: 'Muestreo aleatorio simple: definición y aplicación',
             hash: 't_4_1',
           },
           {
             numero: '4.2',
-            titulo: 'Arquitectura limpia con POO',
+            titulo: 'Muestreo estratificado: ventajas y procedimientos',
             hash: 't_4_2',
           },
           {
             numero: '4.3',
-            titulo: 'Implementación práctica de modelos',
+            titulo:
+              'Muestreo por conglomerados: características y ejemplos de uso',
             hash: 't_4_3',
+          },
+          {
+            numero: '4.4',
+            titulo: 'Comparación entre diferentes técnicas de muestreo',
+            hash: 't_4_4',
+          },
+          {
+            numero: '4.5',
+            titulo:
+              'Importancia del tamaño de la muestra en cada técnica de muestreo',
+            hash: 't_4_5',
+          },
+        ],
+      },
+      {
+        nombreRuta: 'tema5',
+        numero: '5',
+        titulo: 'Inferencia estadística',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '5.1',
+            titulo: 'Concepto de inferencia estadística y su relevancia',
+            hash: 't_5_1',
+          },
+          {
+            numero: '5.2',
+            titulo: 'Diferencia entre parámetros y estadísticos',
+            hash: 't_5_2',
+          },
+          {
+            numero: '5.3',
+            titulo: 'Inferencia en la toma de decisiones basada en datos',
+            hash: 't_5_3',
+          },
+          {
+            numero: '5.4',
+            titulo:
+              'Tipos de estimación en inferencia: puntual y por intervalos',
+            hash: 't_5_4',
+          },
+          {
+            numero: '5.5',
+            titulo:
+              'Aplicación de pruebas de hipótesis en la inferencia estadística',
+            hash: 't_5_5',
+          },
+        ],
+      },
+      {
+        nombreRuta: 'tema6',
+        numero: '6',
+        titulo: 'Definición de requerimientos para la recolección de datos',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '6.1',
+            titulo: 'Tipos de requerimientos en proyectos estadísticos',
+            hash: 't_6_1',
+          },
+          {
+            numero: '6.2',
+            titulo:
+              'Requerimientos cuantitativos y cualitativos en la estadística',
+            hash: 't_6_2',
+          },
+          {
+            numero: '6.3',
+            titulo: 'Identificación de las variables clave a recolectar',
+            hash: 't_6_3',
+          },
+          {
+            numero: '6.4',
+            titulo:
+              'Proceso de validación y ajuste de los requerimientos iniciales',
+            hash: 't_6_4',
+          },
+          {
+            numero: '6.5',
+            titulo:
+              'Impacto de los requerimientos en la precisión y relevancia de los datos',
+            hash: 't_6_5',
+          },
+        ],
+      },
+      {
+        nombreRuta: 'tema7',
+        numero: '7',
+        titulo: 'Fuentes de datos',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '7.1',
+            titulo:
+              'Clasificación de fuentes de datos: primarias y secundarias',
+            hash: 't_7_1',
+          },
+          {
+            numero: '7.2',
+            titulo:
+              'Métodos para evaluar la confiabilidad y validez de las fuentes',
+            hash: 't_7_2',
+          },
+          {
+            numero: '7.3',
+            titulo: 'Uso de fuentes de datos primarias en encuestas y estudios',
+            hash: 't_7_3',
+          },
+          {
+            numero: '7.4',
+            titulo:
+              'Fuentes de datos secundarias: bases de datos públicas, informes y publicaciones',
+            hash: 't_7_4',
+          },
+          {
+            numero: '7.5',
+            titulo:
+              'Estrategias para combinar fuentes de datos múltiples en un análisis estadístico',
+            hash: 't_7_5',
+          },
+        ],
+      },
+      {
+        nombreRuta: 'tema8',
+        numero: '8',
+        titulo: 'Determinación de la muestra',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '8.1',
+            titulo: 'Criterios para seleccionar una muestra representativa',
+            hash: 't_8_1',
+          },
+          {
+            numero: '8.2',
+            titulo:
+              'Consideraciones al seleccionar una muestra para minimizar el error',
+            hash: 't_8_2',
+          },
+          {
+            numero: '8.3',
+            titulo:
+              'Impacto del tamaño de la muestra en los resultados estadísticos',
+            hash: 't_8_3',
+          },
+          {
+            numero: '8.4',
+            titulo:
+              'Técnicas para validar la representatividad de la muestra seleccionada',
+            hash: 't_8_4',
           },
         ],
       },
@@ -142,7 +305,7 @@ export default {
       {
         icono: 'fas fa-file-pdf',
         titulo: 'Descargar PDF',
-        download: 'downloads/prueba.pdf',
+        download: 'downloads/228117_CF01_DU_V2.pdf',
       },
       {
         icono: 'fas fa-download',
@@ -157,24 +320,11 @@ export default {
     ],
   },
   global: {
-    Name: 'Programación orientada a objetos: conceptos y modelado',
+    Name: 'Fuentes y técnicas de recolección de datos para análisis',
     Description:
-      'Este componente formativo aborda los fundamentos y prácticas de la programación orientada a objetos, explorando desde conceptos básicos hasta patrones de diseño avanzados. Cubre principios SOLID, modelado UML y arquitectura de software, proporcionando las herramientas necesarias para diseñar y desarrollar sistemas robustos y mantenibles bajo el paradigma orientado a objetos.',
+      'Este componente aborda la recolección de datos, desde conceptos básicos hasta métodos avanzados de muestreo. Explora la diferencia entre población y muestra, tipos de muestreo, y la importancia de elegir fuentes confiables. Introduce herramientas de inferencia estadística para obtener datos representativos. Orientado a nivel técnico, ofrece una visión completa y práctica del proceso de recolección de datos para análisis estadístico.',
     imagenBannerPrincipal: require('@/assets/curso/portada/banner-principal.png'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
-    imagenesDecorativasBanner: [
-      {
-        clases: ['banner-principal-decorativo-1', 'd-none', 'd-lg-block'],
-        imagen: require('@/assets/curso/portada/a1.png'),
-      },
-      {
-        clases: ['banner-principal-decorativo-2'],
-        imagen: require('@/assets/curso/portada/a2.png'),
-      },
-      {
-        clases: ['banner-principal-decorativo-3'],
-        imagen: require('@/assets/curso/portada/a3.png'),
-      },
-    ],
+    imagenesDecorativasBanner: [],
   },
 }

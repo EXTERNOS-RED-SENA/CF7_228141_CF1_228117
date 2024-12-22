@@ -1,63 +1,410 @@
-<template lang="pug">
-.curso-main-container.pb-3
-  BannerInterno
-  .container.tarjeta.tarjeta--blanca.p-4.p-md-5.mb-5
-    .titulo-principal.color-acento-contenido
-      .titulo-principal__numero
-        span 4
-      h1 Patrones y arquitectura orientada a objetos
-    .row.justify-content-center.align-items-center.mb-5
-      .col-lg-8.mb-lg-0.mb-3
-        .p-5(style="background-color: #E6F0FC ")
-          p.mb-0 La culminación de nuestro viaje por la programación orientada a objetos nos lleva a explorar cómo los patrones de diseño y la arquitectura se entrelazan para crear sistemas robustos y mantenibles. Este capítulo aborda la aplicación práctica de todo lo aprendido hasta ahora, centrándonos en soluciones probadas que han resistido la prueba del tiempo.
-      .col-lg-4.col-7: img(src='@/assets/curso/temas/28.png', alt='')
-    Separador
-    #t_4_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
-      h2 4.1 Patrones de diseño fundamentales
-    p.mb-4 Los patrones de diseño son como recetas probadas que resuelven problemas comunes en el desarrollo de #[em software]. Imagina que eres un arquitecto de edificios: así como existen patrones arquitectónicos probados para diseñar escaleras, ventanas o estructuras de soporte, en el #[em software] tenemos patrones que nos ayudan a resolver desafíos recurrentes.
-    .row.justify-content-center.mb-5
-      .col-lg-5.col-7.mb-lg-0.mb-3: img(src='@/assets/curso/temas/29.png', alt='')
-      .col-lg-7
-        .p-4.mb-4(style="background-color: #DED5DB")
-          .row.justify-content-center
-            .col-lg-2.col-5.mb-lg-0.mb-3: img(src='@/assets/curso/temas/30.svg', alt='')
-            .col-lg-10
-              p.mb-0 Consideremos un sistema de notificaciones en una red social moderna. Cuando un usuario realiza una acción significativa (publicar una foto, comentar, dar "me gusta"), varios componentes del sistema necesitan reaccionar: las notificaciones push deben enviarse, los contadores deben actualizarse, las cachés deben invalidarse. Este escenario perfecto para el patrón #[em Observer] permite que múltiples componentes respondan a eventos sin acoplarse entre sí.
-        p.mb-0 Los patrones creacionales, como #[em Factory Method] y #[em Builder], son particularmente valiosos en sistemas que deben ser flexibles en la creación de objetos. Por ejemplo, en un sistema de procesamiento de documentos, podríamos necesitar crear diferentes tipos de documentos (PDF, Word, HTML) sin que el código cliente necesite conocer los detalles específicos de cómo se construye cada formato.
-    Separador
-    #t_4_2.titulo-segundo.color-acento-contenido(data-aos='fade-right')
-      h2 4.2 Arquitectura limpia con POO
-    .row.justify-content-center.align-items-center.mb-5
-      .col-lg-4.col-7.mb-lg-0.mb-3: img(src='@/assets/curso/temas/31.png', alt='')
-      .col-lg-8
-        .p-5(style="background-color: #E6F0FC ")
-          p.mb-0 La arquitectura limpia no es solo un concepto teórico, sino una guía práctica para organizar nuestro código de manera que sea fácil de entender, mantener y adaptar a los cambios. Pensemos en una aplicación de comercio electrónico moderna: la lógica de negocio (cómo se calculan los descuentos, cómo se procesan los pedidos) debe ser independiente de cómo se almacenan los datos o cómo se presenta la interfaz al usuario.
-    p.mb-4 Esta separación de preocupaciones nos permite, por ejemplo, cambiar el sistema de base de datos sin afectar la lógica de negocio, o actualizar la interfaz de usuario sin tocar el núcleo de la aplicación. Es como construir un edificio con sistemas modulares: puedes renovar el interior sin afectar la estructura fundamental.
-    Separador
-    #t_4_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
-      h2 4.3 Implementación práctica de modelos
-    .row.justify-content-center.mb-3
-      .col-lg-8.mb-lg-0.mb-3
-        p.mb-4 La transición del diseño a la implementación es donde la teoría se encuentra con la realidad. Aquí es donde los principios SOLID y los patrones de diseño se convierten en código real que resuelve problemas concretos. Por ejemplo, en una aplicación de gestión hospitalaria, podríamos tener una jerarquía clara de personal médico, pero la implementación debe manejar casos especiales como médicos que también son administrativos, o enfermeros que trabajan en múltiples departamentos.
-        .p-4.mb-4(style="background-color: #DED5DB")
-          .row.justify-content-center
-            .col-lg-2.col-5.mb-lg-0.mb-3: img(src='@/assets/curso/temas/32.svg', alt='')
-            .col-lg-10
-              p.mb-0 La clave está en mantener la flexibilidad sin sacrificar la claridad. Cada patrón implementado, cada decisión arquitectónica, debe justificarse por su valor práctico, no por su elegancia teórica. Es como cocinar: no usamos ingredientes solo porque están de moda, sino porque contribuyen al sabor final del plato.
-      .col-lg-4.col-7: img(src='@/assets/curso/temas/33.png', alt='')
-    .row.justify-content-center.mb-5
-      .col-lg-4.col-7.mb-lg-0.mb-3: img(src='@/assets/curso/temas/34.png', alt='')
-      .col-lg-8
-        p.mb-4 A medida que los sistemas crecen, la importancia de una buena arquitectura se hace más evidente. Un sistema bien diseñado es como una ciudad bien planificada: puede crecer y evolucionar sin perder su funcionalidad esencial. Las interfaces claras actúan como contratos entre diferentes partes del sistema, permitiendo que los equipos trabajen de forma independiente sin pisarse los pies.
-        .p-4(style="background-color: #E6FBEE")
-          p.mb-0 La arquitectura orientada a objetos moderna reconoce que el cambio es inevitable. Los requisitos evolucionarán, las tecnologías cambiarán, y nuestro código debe estar preparado para adaptarse. Esta adaptabilidad no viene por accidente, sino por un diseño cuidadoso que sigue principios probados y patrones establecidos.
-    p.mb-4 El verdadero arte de la arquitectura de #[em software] está en encontrar el equilibrio correcto: suficiente estructura para mantener el orden, suficiente flexibilidad para permitir el cambio, y suficiente simplicidad para mantener el sistema comprensible. Al final, el mejor diseño es aquel que permite que el sistema crezca y evolucione con el mínimo dolor posible.
-    .p-4.mb-4(style="background-color: #DFE9EA")
-      .row.justify-content-center.align-items-center
-        .col-lg-1.col-5.mb-lg-0.mb-3: img(src='@/assets/curso/temas/35.svg', alt='')
-        .col-lg-10
-          p.mb-0 La programación orientada a objetos, cuando se aplica correctamente, nos proporciona las herramientas para crear estos sistemas adaptables y mantenibles. No se trata solo de escribir código que funcione hoy, sino de crear sistemas que puedan evolucionar con gracia a lo largo del tiempo.
-    
+<template>
+  <div class="curso-main-container pb-3">
+    <BannerInterno></BannerInterno>
+    <div class="container tarjeta tarjeta--blanca p-4 p-md-5 mb-5">
+      <div class="titulo-principal color-acento-contenido">
+        <div class="titulo-principal__numero"><span>4</span></div>
+        <h1>Técnicas de muestreo</h1>
+      </div>
+      <div class="row justify-content-center align-items-center mb-5">
+        <div class="col-lg-4">
+          <img class="img-a img-t" src="@/assets/curso/t4/1.svg" alt="" />
+        </div>
+        <div class="col-lg-8">
+          <p>
+            El muestreo es una técnica utilizada en estadística para seleccionar
+            una parte representativa de una población con el fin de realizar un
+            estudio. Dado que en muchas situaciones es impracticable estudiar a
+            toda la población, se selecciona una muestra que, si se elige
+            adecuadamente, reflejará las características de la población. Las
+            técnicas de muestreo garantizan que esta selección sea lo más
+            representativa posible, minimizando sesgos y errores.
+          </p>
+        </div>
+      </div>
+      <Separador> </Separador>
+      <div id="t_4_1" class="titulo-segundo color-acento-botones">
+        <h2>4.1 Muestreo aleatorio simple: definición y aplicación</h2>
+      </div>
+      <p>
+        El muestreo aleatorio simple es uno de los métodos de selección más
+        básicos y efectivos. En este tipo de muestreo, cada individuo u objeto
+        de la población tiene la misma probabilidad de ser seleccionado, lo que
+        garantiza que no haya preferencias o sesgos en la elección de la
+        muestra.
+      </p>
+      <div class="row justify-content-center align-items-center mb-5">
+        <div class="col-lg-5">
+          <img class="img-a img-t" src="@/assets/curso/t4/2.png" alt="" />
+        </div>
+        <div class="col-lg-7">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-12">
+              <div class="titulo mb-4" data-aos="flip-up">
+                <h5 class="mb-0 p-1">Definición</h5>
+              </div>
+              <p>
+                El muestreo aleatorio simple se basa en la premisa de que todos
+                los elementos de la población son equiprobables para ser
+                seleccionados. Esto puede lograrse utilizando una lista numerada
+                de la población y seleccionando los elementos mediante métodos
+                aleatorios, como un sorteo o el uso de generadores de números
+                aleatorios.
+              </p>
+              <div class="titulo mb-4" data-aos="flip-up">
+                <h5 class="mb-0 p-1">Aplicación</h5>
+              </div>
+              <p>
+                Este método es ampliamente utilizado cuando se tiene acceso a
+                una lista completa de la población y se desea obtener una
+                muestra representativa. Sin embargo, es menos práctico en
+                poblaciones grandes o dispersas, ya que puede ser difícil
+                asegurar la equiprobabilidad para cada miembro de la población.
+              </p>
+              <div class="bg28 p-3 brad mb-4">
+                <p>
+                  <b>Ejemplo: </b>si una universidad quiere estudiar el
+                  rendimiento académico de sus estudiantes, puede utilizar un
+                  muestreo aleatorio simple seleccionando al azar un conjunto de
+                  estudiantes de la lista completa de matriculados.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Separador> </Separador>
+      <div id="t_4_2" class="titulo-segundo color-acento-botones">
+        <h2>4.2 Muestreo estratificado: ventajas y procedimientos</h2>
+      </div>
+      <p class="mb-4">
+        El muestreo estratificado es una técnica en la que la población se
+        divide en subgrupos homogéneos llamados estratos, y luego se selecciona
+        una muestra aleatoria de cada estrato. Este método garantiza que todos
+        los subgrupos de la población estén representados en la muestra, lo cual
+        es particularmente útil cuando la población es heterogénea.
+      </p>
+      <div class="row justify-content-center align-items-center mb-5">
+        <div class="col-lg-8 order-lg-1 order-2">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-12">
+              <div class="titulo mb-4" data-aos="flip-up">
+                <h5 class="mb-0 p-1">Definición</h5>
+              </div>
+              <p>
+                En el muestreo estratificado, los estratos se forman en función
+                de alguna característica relevante (por ejemplo, edad, género,
+                nivel educativo). Posteriormente, se selecciona una muestra
+                aleatoria de cada estrato, asegurando que la representación de
+                cada subgrupo en la muestra sea proporcional al tamaño del
+                estrato en la población.
+              </p>
+              <div class="bg28 px-4 p-3 brad mb-4">
+                <p><b>Ventajas</b></p>
+                <ul class="lista-ul--color fa-ul px-4">
+                  <li>
+                    <i class="fas fa-check v1"></i
+                    ><span
+                      >Aumenta la precisión de las estimaciones, ya que cada
+                      estrato está representado adecuadamente.</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-check v1"></i
+                    ><span
+                      >Reduce la variabilidad dentro de los estratos, ya que los
+                      miembros de un estrato comparten características
+                      comunes.</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-check v1"></i
+                    ><span
+                      >Mejora la representación de subgrupos pequeños en la
+                      población, que de otro modo podrían estar subrepresentados
+                      en un muestreo aleatorio simple.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 order-lg-2 order-1">
+          <img class="img-a img-t" src="@/assets/curso/t4/3.png" alt="" />
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center mb-5">
+        <div class="col-lg-3 my-lg-0 my-3 j1">
+          <img class="img-a img-t" src="@/assets/curso/t4/4.svg" alt="" />
+        </div>
+        <div class="col-lg-9 my-lg-0 my-3">
+          <p><b>Procedimientos:</b></p>
+          <ol class="lista-ol--cuadro fa-ul">
+            <li>
+              <div class="lista-ol--cuadro__vineta"><span>1</span></div>
+              <span>
+                Dividir la población en estratos según una o varias
+                características clave.</span
+              >
+            </li>
+            <hr />
+            <li>
+              <div class="lista-ol--cuadro__vineta"><span>2</span></div>
+              <span
+                >Calcular el tamaño de la muestra que se tomará de cada estrato
+                (puede ser proporcional o igual para todos los estratos).</span
+              >
+            </li>
+            <hr />
+            <li>
+              <div class="lista-ol--cuadro__vineta"><span>3</span></div>
+              <span
+                >Seleccionar una muestra aleatoria simple dentro de cada
+                estrato.
+                <p>
+                  <b>Ejemplo: </b> si un investigador desea estudiar los hábitos
+                  de lectura de estudiantes de diferentes niveles de educación
+                  (primaria, secundaria, y universitaria), podría estratificar a
+                  los estudiantes por nivel educativo y seleccionar una muestra
+                  aleatoria de cada nivel.
+                </p></span
+              >
+            </li>
+          </ol>
+        </div>
+      </div>
+      <Separador> </Separador>
+      <div id="t_4_3" class="titulo-segundo color-acento-botones">
+        <h2>
+          4.3 Muestreo por conglomerados: características y ejemplos de uso
+        </h2>
+      </div>
+      <p>
+        El <b>muestreo por conglomerados </b>es una técnica en la que la
+        población se divide en grupos heterogéneos, o conglomerados, y luego se
+        selecciona al azar uno o varios de estos conglomerados para ser
+        estudiados en su totalidad. A diferencia del muestreo estratificado, los
+        conglomerados no son homogéneos, sino que cada uno representa una
+        "miniatura" de la población completa.
+      </p>
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 my-3 order-lg-1 order-2">
+          <AccordionRED tipo="a" clase-tarjeta="tarjeta tarjeta--azul">
+            <div class="row justify-content-center" titulo="Definición">
+              <div class="col-lg-12 my-3">
+                <p>
+                  Los conglomerados son subgrupos naturales de la población que
+                  pueden representar una mezcla diversa de características. En
+                  lugar de seleccionar individuos directamente, se seleccionan
+                  conglomerados completos, y todos los miembros de los
+                  conglomerados seleccionados son incluidos en la muestra.
+                </p>
+              </div>
+            </div>
+            <div class="row justify-content-center" titulo="Características">
+              <div class="col-lg-12 my-3">
+                <ul class="lista-ul--color fa-ul px-4">
+                  <li>
+                    <i class="fas fa-check v1"></i
+                    ><span
+                      >Es útil cuando es difícil acceder a toda la población,
+                      pero los conglomerados son más accesibles.</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-check v1"></i
+                    ><span
+                      >Se utiliza cuando los conglomerados representan
+                      adecuadamente a la población en su conjunto.</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-check v1"></i
+                    ><span
+                      >Puede ser más barato y eficiente que otras técnicas de
+                      muestreo, ya que reduce costos de desplazamiento o
+                      logística.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row justify-content-center" titulo="Ejemplos de uso">
+              <div class="col-lg-12 my-3">
+                <ul class="lista-ul--color fa-ul px-4">
+                  <li>
+                    <i class="fas fa-check v1"></i
+                    ><span
+                      >Estudio sobre el rendimiento académico de estudiantes en
+                      una región. En lugar de seleccionar estudiantes
+                      individualmente de toda la región, se pueden seleccionar
+                      al azar varias escuelas (conglomerados), y luego estudiar
+                      a todos los estudiantes de esas escuelas.</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-check v1"></i
+                    ><span
+                      >Investigación sobre la satisfacción de empleados en una
+                      empresa con múltiples sucursales. Se puede seleccionar un
+                      conjunto de sucursales (conglomerados) y encuestar a todos
+                      los empleados de esas sucursales.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </AccordionRED>
+        </div>
+        <div class="col-lg-4 my-3 order-lg-2 order-1">
+          <img class="img-a img-t" src="@/assets/curso/t4/5.png" alt="" />
+        </div>
+      </div>
+      <Separador> </Separador>
+      <div id="t_4_4" class="titulo-segundo color-acento-botones">
+        <h2>4.4 Comparación entre diferentes técnicas de muestreo</h2>
+      </div>
+      <p>
+        Las diferentes técnicas de muestreo tienen ventajas y desventajas, y la
+        elección del método depende del contexto del estudio y las
+        características de la población.
+      </p>
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-4 my-3">
+          <img class="img-a img-t" src="@/assets/curso/t4/6.svg" alt="" />
+        </div>
+        <div class="col-lg-8 my-3">
+          <AccordionRED tipo="a" clase-tarjeta="tarjeta tarjeta--azul">
+            <div
+              class="row justify-content-center"
+              titulo="Muestreo aleatorio simple"
+            >
+              <div class="col-lg-12 my-3">
+                <p>
+                  <b>Ventajas:</b> fácil de aplicar y entender, garantiza que
+                  todos los elementos de la población tienen la misma
+                  probabilidad de ser seleccionados.
+                </p>
+                <p>
+                  <b>Desventajas:</b> no siempre es representativo si la
+                  población es muy heterogénea o si es difícil acceder a una
+                  lista completa de la población.
+                </p>
+              </div>
+            </div>
+            <div
+              class="row justify-content-center"
+              titulo="Muestreo estratificado"
+            >
+              <div class="col-lg-12 my-3">
+                <p>
+                  <b>Ventajas:</b> mejora la precisión del estudio y garantiza
+                  la representación adecuada de todos los subgrupos.
+                </p>
+                <p>
+                  <b>Desventajas:</b> requiere conocimientos previos sobre la
+                  estructura de la población para formar los estratos, lo cual
+                  puede ser costoso o difícil de implementar.
+                </p>
+              </div>
+            </div>
+            <div
+              class="row justify-content-center"
+              titulo="Muestreo por conglomerados"
+            >
+              <div class="col-lg-12 my-3">
+                <p>
+                  <b>Ventajas:</b> menor costo y mayor eficiencia en términos de
+                  tiempo y recursos cuando los conglomerados son fáciles de
+                  identificar y acceder.
+                </p>
+                <p>
+                  <b>Desventajas:</b> puede generar estimaciones menos precisas
+                  si los conglomerados no son representativos de la población.
+                </p>
+              </div>
+            </div>
+          </AccordionRED>
+        </div>
+      </div>
+      <Separador> </Separador>
+      <div id="t_4_5" class="titulo-segundo color-acento-botones">
+        <h2>
+          4.5 Importancia del tamaño de la muestra en cada técnica de muestreo
+        </h2>
+      </div>
+      <p>
+        El tamaño de la muestra es un factor que afecta la precisión de los
+        resultados obtenidos mediante el muestreo. Independientemente de la
+        técnica de muestreo elegida, el tamaño de la muestra debe ser suficiente
+        para minimizar el error estándar y garantizar la representatividad de la
+        población.
+      </p>
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 my-3 order-lg-1 order-2">
+          <AccordionRED tipo="a" clase-tarjeta="tarjeta tarjeta--azul">
+            <div
+              class="row justify-content-center"
+              titulo="Muestreo aleatorio simple"
+            >
+              <div class="col-lg-12 my-3">
+                <p>
+                  Un tamaño de muestra mayor reduce la variabilidad y el error
+                  de muestreo, mejorando la precisión de las estimaciones.
+                </p>
+              </div>
+            </div>
+            <div
+              class="row justify-content-center"
+              titulo="Muestreo estratificado"
+            >
+              <div class="col-lg-12 my-3">
+                <p>
+                  El tamaño de la muestra en cada estrato debe ser proporcional
+                  al tamaño del estrato en la población, garantizando que todos
+                  los subgrupos estén representados adecuadamente.
+                </p>
+              </div>
+            </div>
+            <div
+              class="row justify-content-center"
+              titulo="Muestreo por conglomerados"
+            >
+              <div class="col-lg-12 my-3">
+                <p>
+                  Aunque esta técnica puede reducir costos, a menudo requiere un
+                  mayor tamaño de muestra o más conglomerados para compensar la
+                  menor precisión que puede derivarse de la heterogeneidad
+                  dentro de los conglomerados.
+                </p>
+                <p><b>Ejemplo:</b> muestreo aleatorio simple y sistemático.</p>
+                <p>
+                  <b>Muestreo aleatorio simple:</b> seleccionamos una muestra de
+                  5 empleados de una población de 20 empleados utilizando un
+                  generador de números aleatorios. Supongamos que los números
+                  seleccionados son: 3, 7, 9, 14, 18.
+                </p>
+                <p>
+                  <b>Muestreo sistemático:</b>de la misma población de 20
+                  empleados, seleccionamos un empleado cada 4 (comenzando con el
+                  empleado 3). Los empleados seleccionados serán: 3, 7, 11, 15,
+                  19.
+                </p>
+                <p>
+                  Esto asegura una distribución uniforme en la selección de
+                  empleados.
+                </p>
+              </div>
+            </div>
+          </AccordionRED>
+        </div>
+        <div class="col-lg-4 my-3 order-lg-2 order-1">
+          <img class="img-a img-t" src="@/assets/curso/t4/7.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>

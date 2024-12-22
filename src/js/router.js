@@ -45,6 +45,26 @@ const router = new VueRouter({
           name: 'tema4',
           component: () => import('../pages/Tema4.vue'),
         },
+        {
+          path: 'tema5',
+          name: 'tema5',
+          component: () => import('../pages/Tema5.vue'),
+        },
+        {
+          path: 'tema6',
+          name: 'tema6',
+          component: () => import('../pages/Tema6.vue'),
+        },
+        {
+          path: 'tema7',
+          name: 'tema7',
+          component: () => import('../pages/Tema7.vue'),
+        },
+        {
+          path: 'tema8',
+          name: 'tema8',
+          component: () => import('../pages/Tema8.vue'),
+        },
       ],
     },
     {
