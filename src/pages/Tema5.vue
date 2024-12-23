@@ -385,29 +385,43 @@
               Supongamos que queremos probar si el salario promedio de los
               empleados en una empresa es mayor a $ 50.000. Tenemos una muestra
               de 30 empleados con una media de x = 52,000 y una desviación
-              estándar de &#8709; = 8,000
+              estándar de &#963; = 8,000
             </p>
             <p>
               <b>Hipótesis nula (H<sub>0</sub>):</b> el salario promedio es
-              &#181; = 50,000
+              <math xmlns="http://www.w3.org/1998/Math/MathML"
+                ><mi mathvariant="normal">&#x3bc;</mi></math
+              >
+              = 50,000
             </p>
             <p>
               <b>Hipótesis alternativa (H<sub>1</sub>):</b> el salario promedio
-              es mayor que a &#181; = 50,000
+              es mayor que a
+              <math xmlns="http://www.w3.org/1998/Math/MathML"
+                ><mi mathvariant="normal">&#x3bc;</mi></math
+              >
+              = 50,000
             </p>
             <p>
               Utilizamos una <b>prueba &#355;</b> para una media muestral. El
               estadístico de prueba &#355; es:
             </p>
             <p class="text-center">
-              <img class="img-a img-t" src="@/assets/curso/t5/10.png" alt="" />
+              <img
+                class="img-a img-t"
+                src="@/assets/curso/t5/10.png"
+                alt="Fórmula para calcular el valor t, con un resultado aproximado de 1.37."
+              />
             </p>
             <p>
-              Con un nivel de significancia o = 0.05, el valor crítico para t
-              con 29 grados de libertad es 1.699. Como t = 1.37 &gt; 1.699, no
-              podemos rechazar H<sub>0</sub>, lo que indica que no hay
-              suficiente evidencia para afirmar que el salario promedio es mayor
-              a $ 50,000.
+              Con un nivel de significancia
+              <math xmlns="http://www.w3.org/1998/Math/MathML"
+                ><mi mathvariant="normal">&#x3b1;</mi></math
+              >
+              = 0.05, el valor crítico para t con 29 grados de libertad es
+              1.699. Como t = 1.37 &gt; 1.699, no podemos rechazar
+              H<sub>0</sub>, lo que indica que no hay suficiente evidencia para
+              afirmar que el salario promedio es mayor a $ 50,000.
             </p>
           </div>
         </div>

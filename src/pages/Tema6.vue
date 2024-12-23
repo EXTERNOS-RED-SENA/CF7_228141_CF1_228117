@@ -50,9 +50,9 @@
                     precisos.
                   </p>
                   <p>
-                    Ejemplo: en un estudio de ventas, los datos requeridos
-                    pueden incluir la cantidad de unidades vendidas, los
-                    ingresos generados, o el precio promedio por unidad.
+                    <b>Ejemplo: </b> en un estudio de ventas, los datos
+                    requeridos pueden incluir la cantidad de unidades vendidas,
+                    los ingresos generados, o el precio promedio por unidad.
                   </p>
                 </div>
                 <div class="col-lg-5 my-2">
@@ -74,8 +74,8 @@
                     preferencias, tipos de productos, entre otros.
                   </p>
                   <p>
-                    Ejemplo: en una encuesta de satisfacción del cliente, los
-                    datos cualitativos pueden incluir comentarios sobre la
+                    <b>Ejemplo: </b>en una encuesta de satisfacción del cliente,
+                    los datos cualitativos pueden incluir comentarios sobre la
                     experiencia de compra o la clasificación de los productos en
                     categorías de satisfacción (muy satisfecho, satisfecho,
                     insatisfecho).
@@ -99,7 +99,7 @@
                     cambios o tendencias a lo largo del tiempo.
                   </p>
                   <p>
-                    Ejemplo: un estudio sobre el comportamiento de los
+                    <b>Ejemplo: </b> un estudio sobre el comportamiento de los
                     consumidores puede requerir datos de ventas mensuales
                     durante los últimos cinco años para identificar patrones
                     estacionales.
@@ -123,7 +123,7 @@
                     claramente las áreas de donde se tomarán los datos.
                   </p>
                   <p>
-                    Ejemplo: un análisis de mercado puede requerir datos
+                    <b>Ejemplo: </b> un análisis de mercado puede requerir datos
                     específicos de ventas de diferentes ciudades o regiones para
                     comparar los comportamientos de compra en diversas zonas
                     geográficas.
@@ -245,7 +245,11 @@
       <div class="row justify-content-center mb-5">
         <div class="col-lg-4">
           <div class="bg15 p-4 brad h-100">
-            <img class="img-t img-a mb-4" src="@/assets/curso/t6/8.svg" />
+            <img
+              class="img-t img-a mb-4"
+              src="@/assets/curso/t6/8.svg"
+              alt="Fórmula para calcular el tamaño de muestra n = (Z ⋅ σ / E)2, donde Z = 1.96 σ = 4000 \ E = 500, resultando en n = 245.86"
+            />
             <div class="row justify-content-center mb-4">
               <p class="col-lg-auto mb-2 bg11 px-3">
                 <b>Variables dependientes e independientes</b>

@@ -439,14 +439,14 @@
                 </p>
                 <p>Respuesta = { 7, 8, 6, 9, 7, 8, 5, 7, 6, 9 }</p>
                 <p>
-                  <strong>Fase de recolección de datos:</strong> se recolecta
+                  <strong>Fase de recolección de datos: </strong> se recolecta
                   las respuestas de los clientes mediante un formulario en
                   línea.
                 </p>
                 <p><strong>Fase de análisis:</strong></p>
                 <div class="tarjeta text-center">
                   <div class="eq-c">
-                    <span> Media: x = </span>
+                    <span> Media: x̅ = </span>
                     <div class="fraction">
                       <span class="fup"
                         >7 + 8 +6 + 9 + 7 + 8 + 5 + 7 + 6 + 9</span
@@ -457,7 +457,7 @@
                     <span> = 7.2</span>
                   </div>
                 </div>
-                <p>Desviación estándar: o = 1.35</p>
+                <p>Desviación estándar: &#963; &#8776; 1.35</p>
                 <p>
                   <strong>Fase de interpretación:</strong> la media de
                   satisfacción es de 7.2, lo que indica que, en general, los

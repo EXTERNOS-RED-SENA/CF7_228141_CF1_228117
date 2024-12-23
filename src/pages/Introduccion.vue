@@ -76,7 +76,7 @@
       </div>
       <h4 class="mb-4">
         ¡Te damos una maravillosa bienvenida a las fuentes y técnicas de
-        recolección de datos!
+        recolección de datos para análisis!
       </h4>
       <div class="row justify-content-center align-items-center">
         <div class="col-lg-12">
